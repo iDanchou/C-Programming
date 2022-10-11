@@ -14,14 +14,14 @@ int main() {
 
 	// Collect user input for row and store in rowNum
 	printf("Please enter a row number: ");
-	scanf("%d", &rowNum);
+	scanf_s("%d", &rowNum);
 
 	// Collect user input for column and store in colNum
 	printf("Please enter a column number: ");
-	scanf("%d", &colNum);
+	scanf_s("%d", &colNum);
 
 	// Place collected value in desired location [rowNum][colNum]
-	board[rowNum][colNum] = "X";
+	board[rowNum][colNum] = 'X';
 
 	// Nested for loop to print each space
 	for (int i = 0; i < 3; i++) {
